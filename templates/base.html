@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/css/960.css" />
+		<link rel="stylesheet" href="/static/css/to_top.css" />
+		<link rel="stylesheet" href="/static/css/menu.css" />
+		<link rel="stylesheet" href="/static/css/tango.css" />
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/to_top.js"></script>
+		{% block "custom_head" %} {% endblock %}
+
+	</head>
+
+	<body>
+	<div class="container_12">
+
+		<div id="menubar" class="grid_12">
+		{% include "menubar.html" %}
+		</div>
+
+		<div class="clear"></div>
+
+		{% block "body" %}
+		{% endblock %}
+
+		<div class="clear"></div>
+
+		<div id="backtotop">
+			<a href="#">
+			<img src="/static/images/to_top.png" border="0px"/>
+			</a>
+		</div>
+	</div>
+
+	</body>
+</html>

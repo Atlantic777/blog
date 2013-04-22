@@ -1,0 +1,11 @@
+#menubar {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+#menubar a {
+	color: black;
+	margin: 5px;
+}

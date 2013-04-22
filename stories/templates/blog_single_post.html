@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block "custom_head" %}
+	<link rel="stylesheet" href="/static/css/blog.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Old+Standard+TT" />
+{% endblock %}
+
+{% block "body" %}
+<div id="post">
+{{ post.rendered|safe }}
+</div>
+{% endblock %}

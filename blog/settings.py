@@ -127,6 +127,8 @@ INSTALLED_APPS = (
     'south',
     'stories',
     'home',
+    'taggit',
+    'taggit_templatetags',
 )
 
 # A sample logging configuration. The only tangible logging

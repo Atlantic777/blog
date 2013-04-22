@@ -9,14 +9,8 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'blog.views.home', name='home'),
     # url(r'^blog/', include('blog.foo.urls')),
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^blog/', include('stories.urls')),
     url(r'^$', 'home.views.home'),
-)
-
-if settings.DEBUG:
-	urlpatterns += patterns('',
-		url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
-		'document_root': settings.MEDIA_ROOT,
-		}),
 )

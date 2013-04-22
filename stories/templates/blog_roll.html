@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block "custom_head" %}
+		<link rel="stylesheet" href="/static/css/blog.css" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Old+Standard+TT" />
+{% endblock %}
+
+
+{% block "body" %}
+
+{% include "blog_header.html" %}
+
+<div id="sidebar" class="grid_3 alpha">
+{% include "blog_sidebar.html" %}
+</div>
+
+<div id="timeline" class="grid_9 omega">
+{% include "blog_post.html" %}
+</div>
+
+{% endblock %}

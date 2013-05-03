@@ -1,5 +1,26 @@
 {% extends "base.html" %}
 
 {%block "body" %}
-<h1> homepage </h1>
+
+<div id="profile_pic" class="grid_5">
+<img style="margin-left:auto; margin-right:auto; display:block; margin-bottom:20px;" src="/static/images/profile.jpg" width="280">
+</div>
+
+<div id="blog_ticker" class="grid_4">
+</div>
+
+<div id="status_ticker" class="grid_3">
+</div>
+
+<div class="clear"></div>
+
+<div id="community" class="grid_6">
+{% include "home_community.html" %}
+</div>
+
+<div id="soc_networks" class="grid_6">
+{% include "home_soc_networks.html" %}
+</div>
+
+
 {% endblock %}

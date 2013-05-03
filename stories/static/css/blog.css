@@ -11,9 +11,7 @@
 #post_title {
 	font-family: "Garamond";
 	font-weight: bold;
-	font-style: italic;
 	font-size: 20pt;
-	text-decoration: underline;
 }
 
 #post_title h2 {
@@ -25,6 +23,7 @@
 #post_tags {
 	border-left: 1px solid;
 	padding-left: 5px;
+	font-style: italic;
 }
 
 #post_date 	{ text-align: center; }

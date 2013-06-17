@@ -1,28 +1,18 @@
 {% for post in post_list %}
 
-<div id="post_date" class="grid_1 alpha">
-<div id="post_date_day"> {{ post.datetime|date:"d.M" }} </div>
-<div id="post_date_year">{{ post.datetime|date:"Y"   }} </div>
-<div id="post_date_time">{{ post.datetime|date:"h:i" }} </div>
+
+<div id="post_title" class="grid_7" > 
+<a href="/blog/post/{{ post.id }}"><h1>{{post.title}}</h1></a> 
 </div>
 
-<div id="post_title" class="grid_8 omega" > 
-<a href="/blog/post/{{ post.id }}"><h2>{{post.title}}</h2></a> 
-</div>
+<div id="post_date" class="grid_1">
+ {{ post.datetime|date:"d.m.Y" }} 
+ </div>
 
 <div class="clear"></div>
 
-<div class="grid_9 alpha omega">
-	
-	<div id="post_text" class="grid_8 alpha" style="margin-bottom:40px" >
-	<p> {{ post.rendered|safe }} </p>
-	</div>
-
-	<div id="post_tags" class="grid_1 omega" >
-	{% for tag in post.tags.all %}
-		{{ tag.name }} <br>
-	{% endfor %}
-	</div>
+<div id="post_text" class="grid_9">
+	{{ post.rendered|safe }}
 </div>
 
 <div class="clear"></div>
